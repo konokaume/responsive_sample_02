@@ -1,0 +1,118 @@
+@charset   "UTF-8";
+ 
+* {
+  margin: 0;
+  padding: 0 ;
+  list-style: none;
+  text-decoration: none;
+}
+ 
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+ 
+header {
+  background: rgb(61, 11, 167);
+  color: #FFF;
+  padding: 20px;
+}
+ 
+.main-menu {
+  background:rgb(104, 145, 206);
+}
+ 
+.main-menu ul li {
+  text-align: center;
+}
+ 
+.main-menu ul li a {
+  color: #FFF;
+  display: block;
+  padding: 10px 20px;
+}
+ 
+.main-menu ul li a:hover {
+  background: rgb(61, 11, 167);
+  color: rgb(193, 249, 255);
+}
+ 
+section {
+  background: rgb(196, 211, 226);
+  flex: 3;
+  padding: 20px;
+}
+ 
+article {
+  background: #FFF;
+  padding: 20px;
+  margin-bottom: 20px;  
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+aside {
+  background: rgb(168, 188, 217);
+  flex: 1;
+}
+ 
+.sub-menu {
+  background: rgb(145, 184, 243); 
+}
+ 
+.sub-menu ul li {
+  text-align: center;
+}
+ 
+.sub-menu ul li a {
+  color: #FFF;
+  display: block;
+  padding: 10px 20px;
+}
+ 
+.sub-menu ul li a:hover {
+  background: rgb(104, 145, 206);
+}
+ 
+footer   {
+  background: rgb(35, 50, 63);
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/*タブレット用   600px以上〜*/
+@media all and (min-width: 600px) {
+
+  .main-menu ul {
+    display: flex;
+  }
+
+  .main-menu ul li {
+    text-align: left;
+  }
+
+  main {
+    display: flex;
+  }
+
+  .sub-menu ul li {
+    text-align: left;
+  }
+
+}
+
+/*コンピュータ用   1025px以上〜*/
+@media all and (min-width: 1025px) {
+
+  #wrap {
+    width: 84%;
+    max-width: 1280px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
